@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  route:
+    build: .
+    ports:
+      - 8001:8000
+    image: route:routing
+    container_name: routing_solutions
+    command: python3 manage.py runserver 127.0.0.1:8000
